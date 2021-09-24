@@ -1,0 +1,35 @@
+.d-block {
+  display: block !important;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.menu-active {
+  color: $color-secondary;
+}
+
+.burger-close {
+  span {
+    background-color: $color-light !important;
+
+    &::before {
+      transition: 0.5s ease;
+      transform: translate(0, 1rem) rotate(45deg);
+      background-color: $color-secondary !important;
+    }
+
+    &::after {
+      transition: 0.5s ease;
+      transform: translate(0, -1rem) rotate(-45deg);
+      background-color: $color-secondary !important;
+    }
+  }
+}
+
+.menu-open {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  pointer-events: unset !important;
+}

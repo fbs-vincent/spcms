@@ -7,6 +7,9 @@
 .menu-active {
   color: #d89c35;
 }
+.color-light {
+  color: #fff;
+}
 .burger-close span {
   background-color: #fff !important;
 }
@@ -60,35 +63,30 @@ ul li {
   src: url('../font/Poppins-ExtraLight.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: 'poppins-light';
   src: url('../font/Poppins-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: 'poppins-regular';
   src: url('../font/Poppins-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: 'poppins-semibold';
   src: url('../font/Poppins-SemiBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: 'poppins-bold';
   src: url('../font/Poppins-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 .about-card {
   width: 100%;
@@ -683,10 +681,10 @@ ul li {
     margin-right: 2rem;
   }
 }
-.navigation .menu {
+.navigation .menu-top-bar-container {
   z-index: 9999;
 }
-.navigation .menu ul li {
+.navigation .menu-top-bar-container ul li {
   list-style-type: none;
   display: inline-block;
   margin-right: 2rem;
@@ -694,26 +692,30 @@ ul li {
   -webkit-transition: 0.1s all ease-in-out;
   transition: 0.1s all ease-in-out;
 }
-.navigation .menu ul li a {
+.navigation .menu-top-bar-container ul li a {
   font-family: 'poppins-bold';
   display: inline-block;
 }
-.navigation .menu ul li:last-child {
+.navigation .menu-top-bar-container ul li:last-child {
   margin-right: unset;
 }
-.navigation .menu ul li:hover {
+.navigation .menu-top-bar-container ul li:hover {
   color: #d89c35;
 }
-.navigation .menu ul li.cta > a {
+.navigation .menu-top-bar-container .cta a {
   background-color: #d89c35;
   padding: 1rem 4rem;
-  color: #fff;
   border-radius: 2.5rem;
   font-family: 'poppins-regular' !important;
-  transition: 0.1s all ease-in-out;
+  -webkit-transition: 0.1s all ease-in-out !important;
+  transition: 0.1s all ease-in-out !important;
+  color: #fff !important;
+}
+.navigation .menu-top-bar-container .cta a:hover {
+  background-color: #c78f2e;
 }
 @media only screen and (max-width: 1100px) {
-  .navigation .menu {
+  .navigation .menu-top-bar-container {
     position: absolute;
     width: 100%;
     top: 8rem;
@@ -727,22 +729,22 @@ ul li {
     -webkit-transform: translateY(-2rem);
     transform: translateY(-2rem);
   }
-  .navigation .menu ul li {
+  .navigation .menu-top-bar-container ul li {
     display: block;
     text-align: center;
     margin-right: unset;
     margin-bottom: 2rem;
     color: #fff;
   }
-  .navigation .menu ul li:hover {
+  .navigation .menu-top-bar-container ul li:hover {
     color: #d89c35;
   }
-  .navigation .menu ul li:last-child {
+  .navigation .menu-top-bar-container ul li:last-child {
     margin-bottom: unset;
   }
 }
 @media only screen and (max-width: 1100px) {
-  .navigation .menu {
+  .navigation .menu-top-bar-container {
     top: 5.7rem;
   }
 }
@@ -832,7 +834,7 @@ ul li {
 .talk {
   text-align: center;
   padding: 10rem 0;
-  background: url('../../dist/assets/img/talk-img.jpg');
+  background: url('http://localhost/spcms/wp-content/uploads/2021/09/talk-img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

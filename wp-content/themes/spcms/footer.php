@@ -166,43 +166,14 @@
           </div>
           <div class="footer__wrapper__quicklinks">
             <h4>Quicklinks</h4>
-            <ul>
-              <li>
-                <a href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/about.html"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/news.html"
-                  >News</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/activities.html"
-                  >Activities</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/gallery.html"
-                  >Gallery</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://demo.frontlinebusiness.com.ph/dev/spcms/dist/contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+            <?php
+	        	wp_nav_menu(
+	            array(
+		        'theme_location' => 'bottom-menu',
+	          )
+          );
+	?>
+           
           </div>
           <div class="footer__wrapper__queries">
             <h4>Other Queries</h4>
@@ -277,13 +248,11 @@
             </ul>
           </div>
         </div>
-        <p>
-          © Copyright 2021 Philippine Medical Association. All rights reserved.
+     <p>
+          © Copyright 2021 | San Pablo City Medical Society. All rights
+          reserved.
         </p>
-        <p>
-          Web Design Philippines and Web Hosting by Frontline Bus. Solutions
-          Inc.
-        </p>
+        <p>Web Master: Frontline Business Solutions, Inc.</p>
       </div>
     </footer>
     <?php wp_footer();?>
